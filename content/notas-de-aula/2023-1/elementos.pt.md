@@ -1,6 +1,5 @@
 ---
-title: "Elementos de linguística I"
-date: 2023-04-22T09:54:22-03:00
+title: "Elementos de linguística"
 draft: false
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: "A \"Grammar\" for Any Language"
-date: 2023-02-22T16:43:47-03:00
 draft: false
 ---
 
