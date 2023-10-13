@@ -1,0 +1,7 @@
+<ul id="translated-list">
+  {{ range .Translations }}
+  <li>
+    <a href="{{ .Permalink | relURL }}">{{ .Title }}{{ if .IsPage }} {{ end }}</a>
+  </li>
+  {{ end }}
+</ul>

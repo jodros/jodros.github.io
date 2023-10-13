@@ -1,0 +1,18 @@
+<div id="tags">
+
+	<p id="tag-head">tags</p>
+
+	{{ with .Params.tags }}
+
+	  <br>
+		
+	  {{ range . }}
+
+	  {{ $href := print (relURL "tags/") (urlize .) }}
+
+	  <a href="{{ $href }}">{{ . }}</a>
+
+	  {{ end }}
+	{{ end }}
+
+</div>

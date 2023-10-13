@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="{{ .Site.Language.Lang }}">
+
+  {{ partial "head.html" . }}
+  
+  <body class="">
+
+    {{ block "header" . }}{{ end }}
+
+	  {{ block "main" . }}{{ end }}
+
+	  {{ block "footer" . }}{{ end }}  
+
+	  {{ $dark := "js/dark.js" | relURL }}
+	  <script src="{{ $dark }}"></script>
+  </body>
+</html>

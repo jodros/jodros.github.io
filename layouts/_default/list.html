@@ -1,0 +1,36 @@
+{{ define "header" }}
+
+<header>
+
+	{{ partial "menu.html" . }}
+
+	{{ partial "light.html" . }}
+
+
+</header>
+
+{{ end }}
+
+
+{{ define "main" }}
+
+<main>
+
+	<h1>{{ .Title }}</h1>
+
+	<div id="content">
+
+		{{ .Content }}
+
+	</div>
+
+	{{ range .Pages.ByPublishDate.Reverse }}
+
+	<p>
+		<a class="font-125" href="{{ .RelPermalink }}">{{ .Title }}</a>
+		<br>
+	</p>
+	{{ end }}
+
+</main>
+{{ end }}

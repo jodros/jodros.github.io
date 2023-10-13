@@ -1,0 +1,42 @@
+{{ define "header" }}
+
+<header>
+
+{{ partial "menu.html" . }}
+
+{{ partial "light.html" . }}
+
+</header>
+
+{{ end }}
+
+{{ define "main" }}
+
+<main>
+
+
+<h1 id="title">
+
+{{ .Title }}
+
+</h1>
+
+<br><br>
+
+<div id="content">
+
+{{ .Content }}
+
+</div>
+
+</main>
+
+{{ end }}
+
+{{ define "footer" }}
+
+<footer>
+
+</footer>
+
+{{ end }}

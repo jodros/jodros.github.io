@@ -1,0 +1,48 @@
+{{ define "header" }}
+
+<header>
+
+{{ partial "menu.html" . }}
+
+<div id="light-box">
+	<label for="light">☀</label>
+	<input type='checkbox' class="light" aria-label="Switch between Dark and Light mode" title="Switch between dark and light mode">
+</div>
+
+</header>
+
+{{ end }}
+
+{{ define "main" }}
+
+<main>
+
+
+<h1 id="title">
+
+{{ .Title }}
+
+</h1>
+
+<br><br>
+
+<div id="content">
+
+{{ .Content }}
+
+
+{{ partial "date.html" . }}
+
+</div>
+
+</main>
+
+{{ end }}
+
+{{ define "footer" }}
+
+<footer>
+
+</footer>
+
+{{ end }}
