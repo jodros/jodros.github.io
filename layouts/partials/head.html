@@ -11,13 +11,14 @@
 
 	<title>{{ $title }}</title>
 
-	{{ $fonts := "css/fonts.css" }}
+	{{ $fonts := "css/fonts.css" | relURL }}
 	<link rel="stylesheet" href="{{ $fonts }}">
 
-	{{ $css := "css/style.css" }}
+	{{ $css := "css/style.css" | relURL }}
 	<link rel="stylesheet" href="{{ $css }}">
 
 	<!-- {{/* partial "fonts.html" . */}} -->
+
 	<!-- {{/* partial "mathjax.html" . */}} -->
 
 	{{ if .IsTranslated }}	
