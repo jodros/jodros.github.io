@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<meta name="robots" content="noindex, nofollow"> 
+
+	<meta name="generator" content="Hugo 0.119.0">
+
+	
+	
+
+	<title>Extending SILE typesetter | Public Notebook</title>
+
+	
+	<link rel="stylesheet" href="../../css/fonts.css">
+
+	
+	<link rel="stylesheet" href="../../css/style.css">
+
+	
+
+	
+
+	
+
+
+</head>
+
+  
+  <body class="">
+
+    
+
+<header>
+
+
+
+
+
+<nav>
+	<a href="../../" title="" aria-label="" id="home"></a> 
+</nav>
+
+
+<div id="light-box">
+		<label for="light">☀</label>
+		<input type='checkbox' class="light" aria-label="Switch between Dark and Light mode" title="Switch between dark and light mode">
+</div>
+
+
+</header>
+
+
+
+	  
+
+<main>
+
+<div id="hidden-bar">
+
+  <h1 id="title">Extending SILE typesetter</h1>
+
+
+
+</div>
+
+<br><br>
+
+<div id="content">
+
+<!-- raw HTML omitted -->
+<p><em>This page is going to be updated as new features are being released.</em></p>
+<p>Since using Microsoft Word-like programs is always a disgusting experience, I started looking for some minimalist and free-licensed alternative, I had tried LaTeX but didn&rsquo;t like it at all — no technical disappointing, just found it tricky. So after some time seeking for, I had just discovered 
+<a href="https://github.com/sile-typesetter/sile" title="Simon&#39;s Improved Layout Engine" aria-label="Simon&#39;s Improved Layout Engine" target="_blank">Simon&#39;s Improved Layout Engine</a>
+
+ and since I&rsquo;m using it for any PDF. So why it is so better (at least for my needs) than any other way?</p>
+<p>I know there are many simplified ways to generate pretty good PDFs like using <strong>Pandoc</strong>, <strong>R MarkDown</strong> or <strong>Quarto</strong>, and I had tried all of them. However, my needs are not only about text in some sheet. I was looking for a tool which could beyond that, also have absolute control over each piece of its engine, something with which I could even use as a full alternative to Adobe InDesign, Affinity Publisher or Scribus for serious desktop publishing work. This article is related to my <em>extend.sile</em> repository in GitHub.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<p>So the first command is the <code>\document</code><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> to set the main environment:</p>
+<details>
+  <summary>see simple.sil</summary>
+  <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">\document{
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">%this is a comment
+</span></span><span class="line"><span class="cl">%nofolios %use this command if you want to hide page numbers
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">This is the simplest example of a pdf created using SILE vanilla.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></div>
+</details>
+
+<p><strong>
+<a href="../../pdfs/sile-examples/simple.pdf" title="See the pdf output." aria-label="See the pdf output." target="_blank">See the pdf output.</a>
+
+</strong></p>
+<p>So here is a more complete example:</p>
+<details>
+  <summary>see single-page.sil</summary>
+  <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">\document[papersize=a5]{
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">\use[module=packages.lorem]
+</span></span><span class="line"><span class="cl">\font[family=Cormorant,size=13pt]{
+</span></span><span class="line"><span class="cl">\lorem[words=350]}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></div>
+</details>
+
+<p><strong>
+<a href="../../pdfs/sile-examples/single-page.pdf" title="See the pdf output." aria-label="See the pdf output." target="_blank">See the pdf output.</a>
+
+</strong></p>
+<p>If you wish reproduce this example with a text neither written in English nor being a <code>loremipsum</code>, you must use the command <code>\language[main=]</code><sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> just below the <code>\document</code>, otherwise you&rsquo;re going to have trouble with hyphenation&hellip;</p>
+<p>Note how the borders are too narrow, so how to change it? Each page is made of a set of frames, we&rsquo;re free to create new ones or even edit the values of the default one. That&rsquo;s the moment when the playing begins: SILE has a package system which allows us to overwrite any part of its source<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>, we can gather all our changes using LuaRocks. Your <code>.rockspec</code> file should look like this:</p>
+<details>
+  <summary>see package.sile-dev-1.rockspec</summary>
+  <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="line"><span class="cl"><span class="n">package</span> <span class="o">=</span> <span class="s2">&#34;package-name.sile&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">version</span> <span class="o">=</span> <span class="s2">&#34;dev-1&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">source</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="n">url</span> <span class="o">=</span> <span class="s2">&#34;git+ssh://git@github.com/username/package-name.sile.git&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="n">description</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="n">homepage</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">   <span class="n">license</span> <span class="o">=</span> <span class="s2">&#34;MIT&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="n">dependencies</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="s2">&#34;lua &gt;= 5.1&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="n">build</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="n">type</span> <span class="o">=</span> <span class="s2">&#34;builtin&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">   <span class="n">modules</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="p">[</span><span class="s2">&#34;sile.core.sile&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&#34;core/sile.lua&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="p">[</span><span class="s2">&#34;sile.classes.plain&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&#34;classes/plain.lua&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="p">[</span><span class="s2">&#34;sile.packages.textual.init&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&#34;packages/textual/init.lua&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">   <span class="p">},</span>
+</span></span><span class="line"><span class="cl">   <span class="n">copy_directories</span> <span class="o">=</span> <span class="p">{</span> <span class="s2">&#34;config&#34;</span> <span class="p">}</span> <span class="c1">-- this is going to be used further...</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div>
+</details>
+
+<p>As you&rsquo;ve just saw, we can define which files we&rsquo;re going to overwrite or which new we&rsquo;re creating. Once all files are set up run <code>luarocks --local make</code>, now SILE will look at these pieces of code before looking at the original ones. In my implementation of frame sets, I created <code>framesets.lua</code> inside the <code>core</code> folder and put all them there. But by now lets change only the one in the class <code>plain.lua</code><sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>:</p>
+<details>
+  <summary>see frameset declaration in classes/plain.lua</summary>
+  <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="line"><span class="cl"><span class="n">class.defaultFrameset</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">content</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">left</span> <span class="o">=</span> <span class="s2">&#34;15%pw&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">right</span> <span class="o">=</span> <span class="s2">&#34;85%pw&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">top</span> <span class="o">=</span> <span class="s2">&#34;15%ph&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">bottom</span> <span class="o">=</span> <span class="s2">&#34;top(footnotes)&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="n">folio</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">left</span> <span class="o">=</span> <span class="s2">&#34;left(content)&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">right</span> <span class="o">=</span> <span class="s2">&#34;right(content)&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">top</span> <span class="o">=</span> <span class="s2">&#34;bottom(footnotes)+2%ph&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">bottom</span> <span class="o">=</span> <span class="s2">&#34;97%ph&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="n">footnotes</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">left</span> <span class="o">=</span> <span class="s2">&#34;left(content)&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">right</span> <span class="o">=</span> <span class="s2">&#34;right(content)&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">height</span> <span class="o">=</span> <span class="s2">&#34;0&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">bottom</span> <span class="o">=</span> <span class="s2">&#34;90%ph&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div>
+</details>
+
+<p><strong>
+<a href="../../pdfs/sile-examples/mod-frameset.pdf" title="Now see the output pdf of the last .sil example but with new values set for the content frame." aria-label="Now see the output pdf of the last .sil example but with new values set for the content frame." target="_blank">Now see the output pdf of the last .sil example but with new values set for the content frame.</a>
+
+</strong></p>
+<p>It looks much better, isn&rsquo;t? But there are several other important stuff one should do when working in design of books. Each item must have its own specific value, for example text parts like chapter names, body, epigraphs and footnotes, it is not a good ideia chapters having the same font weight and size as the epigraphs and as the body and so forth. I thought it would be time-saving if all these options were declared in a single configuration file coming together with our <code>rock</code>. That&rsquo;s why there is a <code>config</code> directory to be copied by LuaRocks when the package is installed. What we&rsquo;re going to do now is get a way to parse a <code>toml</code> file and use its data in our code to automatically set every option one may need when making a long and serious-looking document.</p>
+<details>
+  <summary>see a snippet of config/styles/default.toml</summary>
+  <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">papersize</span> <span class="p">=</span> <span class="s2">&#34;a5&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">folios</span>      <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl"><span class="nx">landscape</span>   <span class="p">=</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl"><span class="nx">neverindent</span> <span class="p">=</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">alingments</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">toc</span>             <span class="p">=</span> <span class="s2">&#34;right&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">folio</span>           <span class="p">=</span> <span class="s2">&#34;center&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">chapter</span>         <span class="p">=</span> <span class="s2">&#34;left&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">epigraph</span>        <span class="p">=</span> <span class="s2">&#34;right&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">title</span>           <span class="p">=</span> <span class="s2">&#34;center&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">author</span>          <span class="p">=</span> <span class="s2">&#34;center&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">imprint</span>         <span class="p">=</span> <span class="s2">&#34;center&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">editionNotice</span>   <span class="p">=</span> <span class="s2">&#34;center&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">printingNotice</span>  <span class="p">=</span> <span class="s2">&#34;center&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">acknowledgement</span> <span class="p">=</span> <span class="s2">&#34;center&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">fonts</span><span class="p">]</span> <span class="c"># [family, size, weight, color]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">toc</span>       <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;Cormorant Upright&#34;</span><span class="p">,</span>  <span class="s2">&#34;10pt&#34;</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="kc">false</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">isbn</span>      <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;Cormorant&#34;</span><span class="p">,</span>          <span class="s2">&#34;11pt&#34;</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="kc">false</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">main</span>      <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;Cormorant Garamond&#34;</span><span class="p">,</span> <span class="s2">&#34;13pt&#34;</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="kc">false</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">title</span>     <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;Cormorant&#34;</span><span class="p">,</span>          <span class="s2">&#34;20pt&#34;</span><span class="p">,</span> <span class="mi">600</span><span class="p">,</span> <span class="kc">false</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">folio</span>     <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;Cormorant Infant&#34;</span><span class="p">,</span>   <span class="s2">&#34;11pt&#34;</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="kc">false</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">author</span>    <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;Cormorant&#34;</span><span class="p">,</span>          <span class="s2">&#34;15pt&#34;</span><span class="p">,</span> <span class="mi">700</span><span class="p">,</span> <span class="kc">false</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">special</span>   <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;Noto Sans JP&#34;</span><span class="p">,</span>       <span class="s2">&#34;16pt&#34;</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="kc">false</span><span class="p">]</span> <span class="c"># for characters like ▩▤▧⌘</span>
+</span></span><span class="line"><span class="cl"><span class="nx">headers</span>   <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;Cormorant&#34;</span><span class="p">,</span>          <span class="s2">&#34;10pt&#34;</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="kc">false</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">imprint</span>   <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;Cormorant Infant&#34;</span><span class="p">,</span>   <span class="s2">&#34;16pt&#34;</span><span class="p">,</span> <span class="mi">800</span><span class="p">,</span> <span class="kc">false</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">chapters</span>  <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;Cormorant Infant&#34;</span><span class="p">,</span>   <span class="s2">&#34;18pt&#34;</span><span class="p">,</span> <span class="mi">700</span><span class="p">,</span> <span class="kc">false</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">epigraph</span>  <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;Cormorant&#34;</span><span class="p">,</span>          <span class="s2">&#34;0.9em&#34;</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="kc">false</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">footnotes</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;Baskervville&#34;</span><span class="p">,</span>       <span class="s2">&#34;0.9em&#34;</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="kc">false</span><span class="p">]</span>
+</span></span></code></pre></div>
+</details>
+
+<p>So instead of specifying these along with the document text in the <code>.sil</code> file, we&rsquo;ll have to write only the content letting all this setup being declared outside it. You can check the parsing of the <code>toml</code> in <code>aux/super.lua</code> in the repo. SILE offers us a global table <code>SILE.scratch</code> to store data which may be requested by the classes and packages, so my approach was to parse it before anything else in <code>core/sile.lua</code> and then assign its data to that global table. But what if we need to change only some of these options for our local project? Well, initially I was copy-pasting the entire default.toml to my working directory so thus changing what I wish to do, but it would make much more sense if in the local <code>toml</code> were declared only those which I wish to change. The solution is the function <code>merge</code> run just after super in the main core file, it uses a recursive approach to compare each item of the local <code>settings.toml</code> for each item and/or table existing in <code>default.toml</code>.</p>
+<p>Another addition I made is the option to change the portrait orientation to landscape, so lets rerun the same file but this time with <code>landscape = true</code> in a local <code>settings.toml</code>. I also set an option <code>show = true</code> in the test table in order to see the borders of the frames.</p>
+<p><strong>
+<a href="../../pdfs/sile-examples/landscape.pdf" title="see the pdf output." aria-label="see the pdf output." target="_blank">see the pdf output.</a>
+
+</strong></p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>You can check my code at 
+<a href="https://github.com/jodros/extend.sile" title="this GitHub repository." aria-label="this GitHub repository." target="_blank">this GitHub repository.</a>
+
+&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p><code>\document{...}</code> is &ldquo;syntactic sugar&rdquo; for <code>\begin{document} ... \end{document}</code> and this works for any other command.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>The main option must receive an ISO639-1 code.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p>
+<a href="https://sile-typesetter.org/manual/sile-0.14.10.pdf#page=38" title="SILE official documentation, page 38." aria-label="SILE official documentation, page 38." target="_blank">SILE official documentation, page 38.</a>
+
+&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5">
+<p>The original table is 
+<a href="https://github.com/sile-typesetter/sile/blob/83d142305846800bb5121b13f0a626e3f205dba3/classes/plain.lua#L6" title="this one." aria-label="this one." target="_blank">this one.</a>
+
+&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+
+</div>
+
+</main>
+
+
+
+	  
+
+<footer>
+
+</footer>
+
+  
+
+	  
+	  <script src="../../js/dark.js"></script>
+  </body>
+</html>

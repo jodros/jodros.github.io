@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Открытая тетрадь</title>
+    <link>https://blog.jodros.xyz/ru/</link>
+    <description>Recent content on Открытая тетрадь</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <lastBuildDate>Mon, 14 Aug 2023 11:22:31 -0300</lastBuildDate><atom:link href="https://blog.jodros.xyz/ru/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Пословицы</title>
+      <link>https://blog.jodros.xyz/ru/linguistics/elementos-da-lingua-russa/druguye/poslovitsy/</link>
+      <pubDate>Mon, 14 Aug 2023 11:22:31 -0300</pubDate>
+      
+      <guid>https://blog.jodros.xyz/ru/linguistics/elementos-da-lingua-russa/druguye/poslovitsy/</guid>
+      <description> не имей 100 рублей, а имей 100 друзей. </description>
+    </item>
+    
+    <item>
+      <title>Kanikuly : férias</title>
+      <link>https://blog.jodros.xyz/ru/linguistics/elementos-da-lingua-russa/textos/kanikuly/</link>
+      <pubDate>Mon, 07 Aug 2023 11:49:33 -0300</pubDate>
+      
+      <guid>https://blog.jodros.xyz/ru/linguistics/elementos-da-lingua-russa/textos/kanikuly/</guid>
+      <description>КАНИКУЛЫ У вас были каникулы? Летние или зимние? Когда? В январе – в феврале? Какая была погода? Было холодно? Было жарко? Шёл дождь? Светило солнце? Где вы были? На море? На пляже? В городе? В горах? На фазенде? Как вы отдыхали? Что вы делали? Вы читали книжки? Вы смотрели кино? Вы слушали музыку? Вы любите плавать? Вы любите загорать на пляже или около - бассейна? Вы любите кататься на лыжах?</description>
+    </item>
+    
+  </channel>
+</rss>
