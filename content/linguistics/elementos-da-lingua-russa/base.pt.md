@@ -417,7 +417,7 @@ Os textos a seguir foram retirados de uma apostila e não foram modificados. Se 
 
 Мой друг Пауло сейчас нигде не работает. Он только учится. Но я знаю, что Пауло тоже хочет работать. Может быть, мы будем работать вместе в музее, а может быть, Пауло будет работать вместе с Бруно в книжном магазине. Пауло всегда хочет читать, читать и читать. Он может читать весь день и всю ночь. Его любимый писатель – Лев Николаевич Толстой. Я знаю, что Пауло сейчас читает его роман «Война и мир».
 
-**[Próxima lição: caso prepositivo]({{< relref "prepositivo" >}} "Próxima lição, caso prepositivo")**
+<!-- **[Próxima lição: caso prepositivo]({{< relref "prepositivo" >}} "Próxima lição, caso prepositivo")** -->
 
 [^eto]: Não são a mesma palavra! O primeiro é invariável, enquanto o segundo é declinável.
 [^ref]: Referências: Русский язык для всех (Russo para todos), Карманная грамматика русского языка для иностранцев (Gramática do russo para estrangeiros) e Русский язык в упражнениях (Russo em exercícios), todos da Русский язык издательство (Editora língua russa).
