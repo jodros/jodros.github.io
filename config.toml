@@ -1,5 +1,5 @@
 DefaultContentLanguage = "en"
-baseURL = 'https://jodros.github.io/blog/'
+baseURL = 'https://jodros.github.io/'
 theme = 'minimal'
 relativeURLs = true
 
