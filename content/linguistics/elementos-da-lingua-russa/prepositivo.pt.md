@@ -7,7 +7,11 @@ O caso prepositivo pede sempre por uma... preposição! Para objetos inanimados 
 quanto aos animados usa-se *о*[^o].
 
 Um *о* é sempre acrescentado ao *в* caso a próxima palavra tenha mais de uma consoante em sua primeira sílaba, como *во
+<<<<<<< HEAD
 вторник*[^terça]. No caso da preposição para os animados, se a próxima palavra começa por vogal, um *б* é acrescentado,
+=======
+времени*. No caso da preposição para os animados, se a próxima palavra começa por vogal, um *б* é acrescentado,
+>>>>>>> 895f204 (new file: prepositivo.pt.md)
 por exemplo: *об*...
 
 As regras são:
@@ -139,6 +143,9 @@ substantivos, adjetivos, verbos mais comuns")**
 <!-- [Próxima lição: ]({{< relref "" >}} "") -->
 
 [^o]: Pronuncia-se como um *a* (schwa)...
+<<<<<<< HEAD
 [^terça]: *Na terça-feira.*
+=======
+>>>>>>> 895f204 (new file: prepositivo.pt.md)
 [^faculdade]: Como unidade de uma instituição maior e não no sentido da universidade propriamente dita, nesse caso
 usa-se o *в*.
