@@ -78,7 +78,7 @@ Os adjetivos e as palavras que funcionam como tal (pronomes demonstrativos, por 
 
 - эти > в этих
 - новые места > в новых местах
-- хорошие люли > о хороших людах
+- хорошие люли > о хороших людях
 
 ## Algumas exceções do caso prepositivo
 
