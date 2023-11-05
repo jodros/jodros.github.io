@@ -9,4 +9,3 @@ Como entusiasta de software, eventualmente publico conteúdo sobre no **[YouTube
 
 Atualmente estou desenvolvendo o **[extend.sile](https://github.com/jodros/extend.sile)** -- projeto baseado no SILE typesetting system para facilitar a estilização e até automatizar a diagramação de documentos comuns, ou mesmo de livros.
 
-*Todo o conteúdo desse site está licenciado conforme a Creative Commons.*
