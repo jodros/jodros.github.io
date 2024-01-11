@@ -1,0 +1,331 @@
+:root {
+	--polen: #F3E8D4;
+	--dark-blue: #001B2E;
+
+	--bone-white: #F9F6EE;
+
+	--red-test: #FF0000;
+
+	--br-green: #009739;
+	--br-blue: #012169;
+	--br-yellow: #FEDD00;
+}
+
+
+
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 100vw;
+	min-height: 100vh;
+	margin: 0;
+}
+
+header, main, footer {
+	display: flex;
+	padding-left: 15vw;
+	padding-right: 15vw;
+	width: 70vw;
+}
+
+header {
+	flex-direction: row;
+	justify-content: space-between;
+	height: fit-content;
+	align-items: center;
+	padding-top: 10vmin;
+	padding-bottom: 3vmin;
+	overflow: hidden;
+}
+
+main {
+	flex-direction: column;
+	min-height: 80vh;
+	height: fit-content;
+}
+
+footer {
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	height: auto;
+	margin-bottom: 20vmin;
+}
+
+.light-mode {
+	background-color: var(--bone-white);
+	color: #000000;
+}
+
+.dark-mode {
+	background-color: #000000;
+	color: #ffffff;
+}
+
+a {
+	text-decoration: none !important;
+	box-shadow: none !important;
+	color: unset;
+	width: fit-content;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	hyphens: auto;
+}
+
+code {
+	font-size: 0.7em;
+}
+
+p {
+	text-indent: 7vmin;
+	word-spacing: .3vmin;
+	padding-bottom: .5vmin;
+	text-align-last: left;
+	text-align: justify;
+}
+
+blockquote p {
+	font-size: 0.9em;
+	font-style: italic;
+	margin-left: 7vw;
+	margin-right: 5vw;
+}
+
+.footnotes {
+	font-size: 3.2vmin;
+}
+
+#title {
+	font-family: 'Prata';
+	font-size: 5vmin;
+	margin: 0;
+}
+
+#content {
+	font-family: 'Cormorant Garamond';
+	font-size: 3.7vmin;
+}
+
+#tag-head {
+	width: fit-content;
+	padding: 0;
+	font-size: 3.5vmin;
+	margin: 0;
+	text-indent: 0;
+}
+
+#tags {
+	display: flex;
+	font-size: 2.5vmin;
+	flex-direction: column;
+	width: 100%;
+	height: 4.7vmin;
+	overflow: hidden;
+}
+
+#tags:hover {
+	height: fit-content;
+}
+
+#hidden-bar {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+#title:hover ~ #translated-list, #translated-list:hover {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-bottom: 8vmin;
+}
+
+#translated-list {
+	display: none;
+}
+
+ul, li {
+	list-style-type: none;
+	/* list-style-type: "― "; */
+	margin: 0;
+}
+
+
+#light-box {
+	height: fit-content;
+	width: fit-content;
+	font-size: 5vmin;
+	z-index: 5;
+	position: relative;
+	margin: 0;
+	font-family: 'Cormorant Garamond';
+}
+
+input[type="checkbox"] {
+	height: 6vmin;
+	width: 5vmin;
+	z-index: 10;
+	opacity: 0;
+	background-color: #fff;
+	margin: 0;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+#home::before {
+	animation-name: homegif;
+	animation-duration: 60s;
+	animation-iteration-count: infinite;
+	font-size: 14vmin;
+	width: 10vmin;
+	display: inline-block;
+	content: "";
+}
+
+@keyframes homegif {
+    0%   {content: 'ʔ';}
+    1%   {content: 'p';}
+    2%   {content: 't';}
+    3%   {content: 'k';}
+    4%   {content: 'q';}
+    5%   {content: 'ʡ';}
+    6%   {content: 'b';}
+    7%   {content: 'd';}
+    8%   {content: 'g';}
+    9%   {content: 'ɢ';}
+    10%  {content: 'ʙ';}
+    11%  {content: 'r';}
+    12%  {content: 'ɾ';}
+    13%  {content: 'ɸ';}
+    14%  {content: 'f';}
+    15%  {content: 'θ';}
+    16%  {content: 's';}
+    17%  {content: 'ʃ';}
+    18%  {content: 'ç';}
+    19%  {content: 'x';}
+    20%  {content: 'χ';}
+    21%  {content: 'ħ';}
+    22%  {content: 'h';}
+    23%  {content: 'ʕ';}
+    24%  {content: 'v';}
+    25%  {content: 'ð';}
+    26%  {content: 'z';}
+    27%  {content: 'ʒ';}
+    28%  {content: 'ʝ';}
+    29%  {content: 'ɣ';}
+    30%  {content: 'ʁ';}
+    31%  {content: 'ʜ';}
+    32%  {content: 'ʢ';}
+    33%  {content: 'm';}
+    34%  {content: 'n';}
+    35%  {content: 'ɲ';}
+    36%  {content: 'ŋ';}
+    37%  {content: 'ɴ';}
+    38%  {content: 'ʘ';}
+    39%  {content: 'ǀ';}
+    40%  {content: 'ǃ';}
+    41%  {content: 'ǂ';}
+    42%  {content: 'ǁ';}
+    43%  {content: 'pʼ';}
+    44%  {content: 'tʼ';}
+    45%  {content: 'kʼ';}
+    46%  {content: 'sʼ';}
+    47%  {content: 'ɬʼ';}
+    48%  {content: 'qʼ';}
+    49%  {content: 'χʼ';}
+    50%  {content: 'ʜʼ';}
+    51%  {content: 'ʡʼ';}
+    52%  {content: 'ʕʼ';}
+    53%  {content: 'ɰ';}
+    54%  {content: 'ɯ';}
+    55%  {content: 'ɤ';}
+    56%  {content: 'o';}
+    57%  {content: 'ø';}
+    58%  {content: 'œ';}
+    59%  {content: 'ɔ';}
+    60%  {content: 'ɑ';}
+    61%  {content: 'ɒ';}
+    62%  {content: 'ʌ';}
+    63%  {content: 'ɚ';}
+    64%  {content: 'ɝ';}
+    65%  {content: 'i';}
+    66%  {content: 'ɪ';}
+    67%  {content: 'e';}
+    68%  {content: 'ɛ';}
+    69%  {content: 'æ';}
+    70%  {content: 'ɐ';}
+    71%  {content: 'a';}
+    72%  {content: 'ʊ';}
+    73%  {content: 'u';}
+    74%  {content: 'y';}
+    75%  {content: 'ʏ';}
+    76%  {content: 'ø̞';}
+    77%  {content: 'ɔ̝';}
+    78%  {content: 'ə';}
+    79%  {content: 'ɨ';}
+    80%  {content: 'ʉ';}
+    81%  {content: 'ɯ̞';}
+    82%  {content: 'ɪ̈';}
+    83%  {content: 'ʊ̈';}
+    84%  {content: 'ɒ̈';}
+    85%  {content: 'ɑ̈';}
+    86%  {content: 'ɛ̝';}
+    87%  {content: 'œ̝';}
+    88%  {content: 'ɔ̝̞';}
+    89%  {content: 'ɐ̞';}
+    90%  {content: 'ɶ';}
+    91%  {content: 'ʔ̞';}
+    92%  {content: 'ɥ';}
+    93%  {content: 'ʜ̃';}
+    94%  {content: 'ʡ̯';}
+    95%  {content: 'ɕ';}
+    96%  {content: 'ʑ';}
+    97%  {content: 'ɺ';}
+    98%  {content: 'ɧ';}
+    99%  {content: 'w';}
+    100% {content: 'ʘ̃';}
+}
+
+time {
+	width: 16vmin;
+	font-size: 2.5vmin;
+}
+
+.hidden {
+	display: none;
+}
+
+#homepage {
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	align-self: center;
+	height: 80vh;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 10px;
+}
+
+#list {
+	display: flex;
+	flex-direction: column;
+	font-size: 2vmin;
+	margin-left: 10px;
+	font-family: "";
+}
+
+div.highlight, pre > * {
+	font-size: 2vmin;
+	background-color: transparent;
+}

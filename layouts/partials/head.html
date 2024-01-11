@@ -1,0 +1,39 @@
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- TODO: call this command only if the page is in extra/  -->
+	<meta name="robots" content="noindex, nofollow">
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+	<meta name='copyright' content='Creative Commons BY-SA 4.0'>
+	<meta name='author' content='João Pedro Alves Quinaglia (jodros)'>
+	<meta name='coverage' content='Worldwide'>
+	<meta name='distribution' content='Global'>
+	<meta name='rating' content='General'>
+
+	{{ hugo.Generator }}
+
+	{{ $title := print .Title " | " .Site.Title }}
+	{{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+
+	<title>{{ $title }}</title>
+
+	{{ $fonts := "css/fonts.css" | relURL }}
+	<link rel="stylesheet" href="{{ $fonts }}">
+
+	{{ $css := "css/style.css" | relURL }}
+	<link rel="stylesheet" href="{{ $css }}">
+
+	<!-- {{/* partial "fonts.html" . */}} -->
+
+	<!-- {{/* partial "mathjax.html" . */}} -->
+
+	{{ if .IsTranslated }}
+	{{ range .AllTranslations }}
+	<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" title="{{ .Language.LanguageName }}">
+	{{ end }}
+	{{ end }}
+
+	<!-- <script async src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_CHTML"></script> -->
+</head>

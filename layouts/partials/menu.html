@@ -1,0 +1,9 @@
+{{ $names := slice }}
+
+{{ range $index, $element := .Site.Menus.main }}
+  {{ $names = $names | append $element.Name }}
+{{ end }}
+
+<nav>
+	<a href="/" title="{{ index $names 0 }}" aria-label="{{ index $names 0 }}" id="home"></a> 
+</nav>

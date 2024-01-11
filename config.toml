@@ -1,0 +1,45 @@
+DefaultContentLanguage = "en"
+baseURL = 'https://jodros.github.io/'
+theme = 'minimal'
+relativeURLs = true
+
+[languages]
+  [languages.en]
+    languageName = 'English'
+    title = 'Public Notebook'
+    weight = 1
+
+  [languages.fr]
+    languageName = 'Français'
+    title = "Cahier public"
+    weight = 2
+
+  [languages.ru]
+    languageName = 'Russian'
+    title = "Открытая тетрадь"
+    weight = 3
+     
+  [languages.pt]
+    languageName = 'Portuguese'
+    title = "Caderno público"
+    weight = 4
+    
+[markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ''
+    hl_inline = false
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = false
+    noHl = false
+    style = 'colorful'
+    tabWidth = 4
+
+[sitemap]
+  changeFreq = ''
+  filename = 'sitemap.xml'
+  priority = -1
