@@ -1,13 +1,5 @@
 ---
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-title: "Первый урок : primeira lição"
-=======
 title: "первый урок : primeira lição"
->>>>>>> Stashed changes
-=======
-title: "первый урок : primeira lição"
->>>>>>> Stashed changes
 weight: 1
 draft: false
 ---

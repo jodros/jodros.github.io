@@ -1,13 +1,5 @@
 ---
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-title: "Винительный падеж : caso acusativo"
-=======
 title: "винительный падеж : caso acusativo"
->>>>>>> Stashed changes
-=======
-title: "винительный падеж : caso acusativo"
->>>>>>> Stashed changes
 weight: 3
 draft: false
 ---
@@ -22,7 +14,7 @@ A dificuldade do acusativo começa quando o objeto do verbo é animado -- essa d
 
 ### одушевлённое илм неодушевлённое? : animado ou não-animado?
 
-O masculino singular animado e o plural de ambos os gêneros pedem pelo caso genitivo
+O masculino singular animado e o plural de ambos os gêneros pedem pelo caso genitivo:
 
 - одущевлённые множественные мужские слова : plural masculino animado 
   - finais duros: -ов
@@ -46,6 +38,8 @@ O masculino singular animado e o plural de ambos os gêneros pedem pelo caso gen
 
     Mas se há um encontro consonantal, temos uma vogal móvel:
     <!-- Veja mais detalhes na lição sobre o [caso genitivo]() -->
+
+    Se a primeira consoante desse encontro é dura, usa-se *о* ou *ё*, porém quando é branda, usa-se *е*.
 
     сестра > сестёр 
     кошка > кошек
