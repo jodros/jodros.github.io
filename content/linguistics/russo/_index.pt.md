@@ -1,12 +1,14 @@
 ---
-title: "Elementos Da Lingua Russa"
+title: "Elementos da língua russa"
+layout: single
 weight: 2
 draft: false
+
 ---
 
 *Sou estudante de russo e essas são algumas das minhas notas, elas serão constantemente revistas e modificadas com o tempo. Servindo apenas como apoio, pressuponho que você já tem algum conhecimento elementar da língua russa. As referências bibliográficas estão listadas no final da página.*
 
-{{/*< toc >*/}}
+- {{< tocsec >}}
 
 ----
 

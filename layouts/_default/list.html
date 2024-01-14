@@ -1,0 +1,34 @@
+{{ define "header" }}
+
+<header>
+
+	{{ partial "menu.html" . }}
+
+	{{ partial "light.html" . }}
+
+
+</header>
+
+{{ end }}
+
+
+{{ define "main" }}
+
+<main>
+
+	<h1>{{ .Title }}</h1>
+
+	<div id="content">
+
+		{{ .Content }}
+
+		{{ range .Pages }}
+		<p>
+			<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+			<br>
+		</p>
+		{{ end }}
+	</div>
+
+</main>
+{{ end }}
