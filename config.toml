@@ -6,21 +6,25 @@ relativeURLs = true
 [languages]
   [languages.en]
     languageName = 'English'
+    contentDir = "content/"
     title = 'Public Notebook'
     weight = 1
 
   [languages.fr]
     languageName = 'Français'
+    contentDir = "content/fr"
     title = "Cahier public"
     weight = 2
 
   [languages.ru]
     languageName = 'Russian'
+    contentDir = "content/ru"
     title = "Открытая тетрадь"
     weight = 3
      
   [languages.pt]
     languageName = 'Portuguese'
+    contentDir = "content/pt"
     title = "Caderno público"
     weight = 4
     

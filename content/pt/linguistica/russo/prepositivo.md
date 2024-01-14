@@ -137,7 +137,7 @@ Enquanto o *в* é mais amplamente usado, nos seguintes contextos:
 **[Lição anterior: básico - substantivos, adjetivos, verbos mais comuns]({{< relref "base" >}} "Lição anterior: básico -
 substantivos, adjetivos, verbos mais comuns")**
 
-<!-- [Próxima lição: ]({{< relref "" >}} "") -->
+<!-- [Próxima lição: caso acusativo]({{< relref "acusativo.md" >}} "") -->
 
 [^o]: Pronuncia-se como um *a* (schwa)...
 [^terça]: *Na terça-feira.*

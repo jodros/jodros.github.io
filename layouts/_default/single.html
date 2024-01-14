@@ -2,9 +2,9 @@
 
 <header>
 
-{{ partial "menu.html" . }}
+  {{ partial "menu.html" . }}
 
-{{ partial "light.html" . }}
+  {{ partial "light.html" . }}
 
 </header>
 
@@ -14,19 +14,17 @@
 
 <main>
 
-<div id="hidden-bar">
 
   <h1 id="title">{{ .Title }}</h1>
 
-</div>
 
-<br><br>
+  <br><br>
 
-<div id="content">
+  <div id="content">
 
-{{ .Content }}
+    {{ .Content }}
 
-</div>
+  </div>
 
 </main>
 

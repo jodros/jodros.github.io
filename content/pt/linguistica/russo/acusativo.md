@@ -45,4 +45,4 @@ O masculino singular animado e o plural de ambos os gêneros pedem pelo caso gen
     кошка > кошек
 
 
-Quanto aos adjetivos, pronomes demonstrativos/relativos, eles seguem a forma do **[caso prepositivo]({{< relref "prepositivo.pt.md" >}})**.
+Quanto aos adjetivos, pronomes demonstrativos/relativos, eles seguem a forma do **[caso prepositivo]({{< relref "prepositivo.md" >}})**.

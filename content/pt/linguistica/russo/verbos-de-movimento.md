@@ -46,7 +46,7 @@ Esses verbos são usados quando o sujeito é conduzido ou conduz um meio de tran
 
 - Verbos com sentido de colocar algo em alguma posição
 
-    *[ver]({{< relref "verbos.pt.md" >}})*
+    <!-- *[ver]({{/*< relref "verbos.md" >*/}})* -->
 
     - стоять 
 
