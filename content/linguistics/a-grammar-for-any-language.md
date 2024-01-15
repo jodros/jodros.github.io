@@ -297,33 +297,33 @@ Maybe the biggest deal one can do in this starting point is to list all the main
   + neither .. nor
   + not only .. but also
 + Time:
-  + before ― now ― after
-  + never ― sometimes ― always
-  + yesterday ― today ― tomorrow
+  + before -- now -- after
+  + never -- sometimes -- always
+  + yesterday -- today -- tomorrow
 + Place:
-  + near ― far
-  + here ― there
-  + inside ― outside
+  + near -- far
+  + here -- there
+  + inside -- outside
 + Amount:
-  + almost ― every
-  + none ― each one
-  + a part ― the whole
+  + almost -- every
+  + none -- each one
+  + a part -- the whole
 
 And then the verbs:
 
 + Sensorial: to listen/hear, to see, to touch, to smell, to feel...
 + Movement: to walk, to run, to swim, to fly...
 + Pairs:
-  + to do ― to undo
-  + to want ― can
-  + to read ― to write
-  + to hear ― to speak
-  + to live ― to die
-  + to give ― to receive
-  + to allow ― to deny
-  + to remember ― to forget
-  + to like/love ― to dislike/hate
-  + to begin/start ― to end/finish
+  + to do -- to undo
+  + to want -- can
+  + to read -- to write
+  + to hear -- to speak
+  + to live -- to die
+  + to give -- to receive
+  + to allow -- to deny
+  + to remember -- to forget
+  + to like/love -- to dislike/hate
+  + to begin/start -- to end/finish
 + Daily actions:
   + to eat and to drink
   + to work or to study
@@ -331,15 +331,15 @@ And then the verbs:
 
 Now, regarding to the adjectives, they are maybe the category most suitable to be listed by pairs:
 
-+ tiny ― big
-+ skinny - fat
-+ new ― old
-+ cold ― hot
-+ slow ― fast
-+ easy ― hard
-+ short ― long
-+ rare ― common
-+ straight ― curvy
++ tiny -- big
++ skinny -- fat
++ new -- old
++ cold -- hot
++ slow -- fast
++ easy -- hard
++ short -- long
++ rare -- common
++ straight -- curvy
 
 So now the last but not least are the nouns. But why let them last since most words in any language are nouns? Exactly, they are the majority, but just that, there are a lot of them, indeed, the point is that vocabulary acquisition is just a matter of time once you got those fundamental principles on how sentences are made. We should now list firstly not the words but the subjects they are related to, and so add words as we remember of them.
 
