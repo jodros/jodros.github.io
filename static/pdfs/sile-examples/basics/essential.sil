@@ -1,0 +1,8 @@
+\document{
+
+%nofolios
+\switch-master[id=simple]
+\font[family=Cormorant,size=13pt]{
+\lorem[words=350]}
+
+}
