@@ -1,11 +1,8 @@
 <nav>
   <a href="/{{ .Site.Language.Lang }}" aria-label="home" id="home"></a>
 
-  &nbsp;&nbsp;&nbsp;&nbsp;  
-
   {{ range .Site.Sections }}
     <a href="{{ .RelPermalink }}">{{ .Title }}</a>
   {{ end }}
 
-  
 </nav>

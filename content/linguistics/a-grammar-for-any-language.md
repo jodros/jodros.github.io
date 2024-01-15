@@ -65,11 +65,11 @@ Of course there is much more to approach when describing a language, this is jus
 
 #### Basic questions
 
-+ Is it a synthetic language or an analytic one?
+##### Is it a synthetic language or an analytic one?
 
   The best-known examples of synthetic languages are German, Latin, Greek and Russian: the syntactic function of the words is defined by suffixation and word order does not have great importance. Whereas in analytic languages such as Portuguese, Italian and Mandarin the position of the word has a fundamental role for its right meaning. It may look a bit hard at the beginning for someone used only to the analytic ones to get who is who in a pure synthetic sentence lacking any order.
 
-+ Does it have some relation to your mother tongue?
+##### Does it have some relation to your mother tongue?
 
   It's much easier for a Russian native speaker to learn Ukrainian than for a Spanish native speaker, but on the other side, for the last, it's much easier to learn Portuguese than for the first...
 
