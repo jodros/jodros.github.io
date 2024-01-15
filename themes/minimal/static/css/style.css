@@ -175,6 +175,10 @@ input[type="checkbox"] {
 	right: 0;
 }
 
+#home {
+	margin-right: 1.5vw;
+}
+
 #home::before {
 	animation-name: homegif;
 	animation-duration: 60s;
@@ -221,7 +225,7 @@ input[type="checkbox"] {
     32%  {content: 'ʢ';}
     33%  {content: 'm';}
     34%  {content: 'n';}
-    35%  {content: 'ɲ';}
+    35%  {content: 'tʼ';}
     36%  {content: 'ŋ';}
     37%  {content: 'ɴ';}
     38%  {content: 'ʘ';}
@@ -230,9 +234,9 @@ input[type="checkbox"] {
     41%  {content: 'ǂ';}
     42%  {content: 'ǁ';}
     43%  {content: 'pʼ';}
-    44%  {content: 'tʼ';}
+    44%  {content: 'ɲ';}
     45%  {content: 'kʼ';}
-    46%  {content: 'sʼ';}
+    46%  {content: 'ɒ';}
     47%  {content: 'ɬʼ';}
     48%  {content: 'qʼ';}
     49%  {content: 'χʼ';}
@@ -247,7 +251,7 @@ input[type="checkbox"] {
     58%  {content: 'œ';}
     59%  {content: 'ɔ';}
     60%  {content: 'ɑ';}
-    61%  {content: 'ɒ';}
+    61%  {content: 'sʼ';}
     62%  {content: 'ʌ';}
     63%  {content: 'ɚ';}
     64%  {content: 'ɝ';}
@@ -314,6 +318,7 @@ nav {
 	justify-content: flex-start;
 	align-items: center;
 	gap: 10px;
+	font-size: 3vmin;
 }
 
 #list {
