@@ -1,9 +1,11 @@
-{{ $names := slice }}
-
-{{ range $index, $element := .Site.Menus.main }}
-  {{ $names = $names | append $element.Name }}
-{{ end }}
-
 <nav>
-	<a href="/{{ .Site.Language.Lang }}" title="{{ index $names 0 }}" aria-label="{{ index $names 0 }}" id="home"></a> 
+  <a href="/{{ .Site.Language.Lang }}" aria-label="home" id="home"></a>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;  
+
+  {{ range .Site.Sections }}
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  {{ end }}
+
+  
 </nav>
