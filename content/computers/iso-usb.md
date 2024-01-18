@@ -3,16 +3,14 @@ title: "Steps to make a bootable pendrive"
 draft: false
 ---
 
-### Found its id and unmount
+- Found its id and unmount
 
-`fdisk -ls` or `lsblk` and then `umount /dev/sdx`
+    `fdisk -ls` or `lsblk` and then `umount /dev/sdx`
 
-### Format it
+- Format it
 
-`sudo mkfs.ext4 /dev/sdX`
+    `sudo mkfs.ext4 /dev/sdX`
 
-### Move ISO to pendrive and make it bootable
-
-Now you can transfer the ISO content to pendrive:
-
-`sudo dd if=/path/to/.iso of=/dev/sdX bs=4M && sync`
+- Move ISO to pendrive
+    
+    `sudo dd if=/path/to/.iso of=/dev/sdX bs=4M && sync`
