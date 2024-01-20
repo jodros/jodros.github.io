@@ -7,7 +7,7 @@ Este site é como um *carderno público* e meu "pedaço de terra" na internet.
 
 <!-- Os detalhes estão **[aqui]({{ ref "broadcasts.md" }})**. -->
 
-Graduando em Letras (russo e português) na FFLCH-USP, a ideia de publicar minhas notas é, além de ter um arquivo do meu progresso, compartilhar as coisas *como estudante*, portanto qualquer conteúdo aqui é sujeito a sucessivas alterações conforme revejo os assuntos. Meus interesses não se resumem às humanidades, ciência da computação e software livre também são um tópicos de grande importância para mim.
+Graduando em Letras (russo e português) na FFLCH-USP, a ideia de publicar minhas notas é, além de ter um arquivo do meu progresso, compartilhar as coisas *como estudante*, portanto qualquer conteúdo aqui é sujeito a sucessivas alterações conforme revejo os assuntos. Meus interesses não se resumem às humanidades, ciência da computação e software livre também são tópicos de grande importância para mim.
 
 Estou planejando (há anos!) ter um **[canal no YouTube](https://www.youtube.com/channel/UCTPvakiIaL2Z1F9UNCOml6g)** com a mesma proposta desse site, um dia quem sabe...
 
