@@ -1,6 +1,6 @@
 ---
 title: "A técnica do livro segundo São Jerônimo, de Dom Paulo Evaristo Arns"
-draft: true
+draft: false
 ---
 
 Uma vez, na biblioteca Florestan Fernandes, deparei-me com *A técnica do livro segundo São Jerônimo*.
