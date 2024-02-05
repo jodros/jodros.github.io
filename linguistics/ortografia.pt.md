@@ -17,35 +17,27 @@ Produção incipiente, sem qualquer convenção ortográfica e ainda com muitos 
 
 A escrita portuguesa adquiriu uma grafia classicista, consoante ao entusiasmo renascentista pelo latim e o grego, é desse período registros como *pharmácia*, *philosophia*, *rhetorica*, e muitas outras de étimo suportamente grego ou latino. Ao longo desses séculos, houve algumas tentativas de convencionar a ortografia:
 
-<<<<<<< Updated upstream
-Ortographia da Língoa Portuguesa (1576), de Dante Nunes Leão.
-
-Ortographia ou a Arte de Escrever Certo na Língua Portuguesa (1636), de Álvaro Ferreira da Vera.
-
-Ortographia da Língua Portuguesa (1671) de João Franco Barreto.
-
-Ars Grammaticae (1672) de Bento Ferreira.
-
-Ortographia ou Arte de Escrever e Pronunciar com Acerto a Língua Portugueza (1734), de João de Morais Madureyra Feyjó.
-=======
 - Ortographia da Língoa Portuguesa (1576), de Dante Nunes Leão.
 - Ortographia ou a Arte de Escrever Certo na Língua Portuguesa (1636), de Álvaro Ferreira da Vera.
 - Ortographia da Língua Portuguesa (1671) de João Franco Barreto.
 - Ars Grammaticae (1672) de Bento Ferreira.
 - Ortographia ou Arte de Escrever e Pronunciar com Acerto a Língua Portugueza (1734), de João de Morais Madureyra Feyjó.
->>>>>>> Stashed changes
 
 ##### Do século XX aos nossos dias
 
-Em 1904, foi publicado *Ortografia Nacional*, de Gonçaves Viana, marco decisivo na história da nossa língua, pois dos debates suscitados a partir da sua proposta, firmada em 1911, foi adotada oficialmente em 1916 em Portugal. Daí pouco tempo, em 1931, o Brasil acordava com Portugal, através de suas respectivas Academias, durou pouco pelo efeito da Constituição de 1934. Houve também tentativas internas de reforma no Brasil, como a proposta por Medeiros e Albuquerque em 1907, imortal da Academia Brasileira de Letras que, apesar de ter contado com o entusiasmo de alguns, não foi longe na consagração da proposta... Outra tentativa ocorreu em 1945, também acordado entre as Academias, porém não ratificado pelo Congresso Nacional brasileiro, tendo então o Brasil adotado uma convenção de membros da própria ABL, de 1943, o *Pequeno Vocabulário Ortográfico*, é a partir desse momento que as escritas brasileira e europeia divergem até hoje, preferindo os portugueses usar o acento agudo para vogais que no Brasil são fechadas como *crónica* por *crônica* ou *prémio* por *prêmio*, bem como o uso de consoante mudas, por isso na escrita portuguesa se encontra *acto*, *óptimo*, *acção*, entre outras, enquanto na brasileira grafa-se *ato*, *ótimo* e *ação*, respectivamente.
+Em 1904, foi publicado *Ortografia Nacional*, de Gonçaves Viana, marco decisivo na história da nossa língua, pois dos debates suscitados a partir da sua proposta, firmada em 1911, foi adotada oficialmente em 1916 em Portugal. Daí pouco tempo, em 1931, o Brasil acordava com Portugal, através de suas respectivas Academias, durou pouco pelo efeito da Constituição de 1934. Houve também tentativas internas de reforma no Brasil, como a proposta por Medeiros e Albuquerque em 1907, imortal da Academia Brasileira de Letras que, apesar de ter contado com o entusiasmo de alguns, não foi longe na consagração da proposta... Outra tentativa ocorreu em 1945, também acordado entre as Academias, porém não ratificado pelo Congresso Nacional brasileiro, tendo então o Brasil adotado uma convenção de membros da própria ABL, de 1943, o *Pequeno Vocabulário Ortográfico*, é a partir desse momento que as escritas brasileira e europeia divergem até hoje, preferindo os portugueses usar o acento agudo para vogais que no Brasil são fechadas como *crónica* por *crônica* ou *prémio* por *prêmio*, bem como no uso de consoante mudas, por isso na escrita portuguesa se encontra *acto*, *óptimo*, *acção*, entre outras, enquanto na brasileira grafa-se *ato*, *ótimo* e *ação*, respectivamente.
 
 Acordaram em 1971, outra tentativa de solucionar as variações, com as poucas mudanças sendo a respeito da acentuação, presentes até hoje, como eliminação dos acentos para palavras que, apesar de homógrafas (escritas da mesma forma), são heterófonas (com diferentes pronúncias), assim, tanto a forma verbal *eu govérno* quando a nominal *o govêrno*, passaram a ser *o governo* e *eu governo*, bem como a abolição do trema em algumas palavras vem desse acordo.
 
 Foi também assinado outro acordo, no Rio de Janeiro, em 1986, já com a participação também de Angola, Moçambique, Cabo Verde, Guiné-Bissau e São Tomé e Príncipe, agora não mais meras colônias, mas Estados soberanos. Sendo recebido com oposição em Portugal, esse acordo não entrou em vigor em nenhum país. Só em 1990 em Lisboa, finalmente, outra vez reunidos todos os países cuja língua oficial é o português, estabeleceram a norma ortográfica que usamos hoje em dia. A quem interessar ler o acordo vigente na íntegra, ele pode ser encontrado no site da Academia Brasileira de Letras.[^2].
 
-##### 
+##### tal palavra é com s ou com z, etc...
 
+#### Casos do *s*
 
+- final de sílabas átonas com *a*, *e*, *i* ou *u*
+  - não há regra para as com *e*, elas variam entre ser com *s* ou com *x*, imprevisivelmente.
+- verbos aparentados de substantivos que terminem na forma *is-vogal* como *anál**is**e* ou *pesqu**is**a*.
 
 
 
