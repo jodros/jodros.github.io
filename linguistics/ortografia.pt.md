@@ -31,7 +31,9 @@ Acordaram em 1971, outra tentativa de solucionar as variações, com as poucas m
 
 Foi também assinado outro acordo, no Rio de Janeiro, em 1986, já com a participação também de Angola, Moçambique, Cabo Verde, Guiné-Bissau e São Tomé e Príncipe, agora não mais meras colônias, mas Estados soberanos. Sendo recebido com oposição em Portugal, esse acordo não entrou em vigor em nenhum país. Só em 1990 em Lisboa, finalmente, outra vez reunidos todos os países cuja língua oficial é o português, estabeleceram a norma ortográfica que usamos hoje em dia. A quem interessar ler o acordo vigente na íntegra, ele pode ser encontrado no site da Academia Brasileira de Letras.[^2].
 
-##### tal palavra é com s ou com z, etc...
+### tal palavra é com s ou com z, etc...
+
+A principal referência ao longo dessas notas é a *Gramática da língua portuguesa padrão*, de Amini Boainain Hauy...[^3]
 
 #### Casos do *s*
 
@@ -40,7 +42,11 @@ Foi também assinado outro acordo, no Rio de Janeiro, em 1986, já com a partici
 - verbos aparentados de substantivos que terminem na forma *is-vogal* como *anál**is**e* ou *pesqu**is**a*.
 
 
+##### Critério para verbos
+
+É fundamental, quando tem-se dúvida e não há meios de consultar referências no momento da escrita -- como numa prova -- verificar o substantivo análogo ao verbo que se quer escrever, se ele possui *-is-* na última ou penúltima sílaba, o verbo é com *s*, a exemplo de *análise* > *analisar*, *improviso* > *improvisar*... Nos demais casos usa-se o *z*, a exemplo de *profeta* > *profetizar*, *fiscal* > *fiscalizar*...[^4]
 
 [^1]: Marques, Manuel Eufrázio Azevedo, Apontamentos Historicos, Geographicos, Biographicos, Estatisticos e Noticiozos da Provincia de São Paulo... Vol. II, Rio de Janeiro, 1879. Typ. Universal de E. & H. Laemmert, p. 32 e 33, *apud*. Ellis, Myriam. Documentos sobre a primeira biblioteca pública oficial de São Paulo, Revista de História da Universidade de São Paulo, n. 30, p. 392, 1957. 
 [^2]: {{< static src="https://www.academia.org.br/sites/default/files/conteudo/o_acordo_ortogr_fico_da_lngua_portuguesa_anexoi_e_ii.pdf" text="Acordo ortográfico de 1990." >}}
 [^3]: HAUY, Amini Boainain. Gramática da Língua Portuguesa Padrão. São Paulo, 2014, Editora da Universidade de São Paulo.
+[^4]: *idem*, p. 234.
