@@ -28,6 +28,8 @@ draft: false
   - Genitivo : родительный
   - Prepositivo : предложный
   - Instrumental : творительный
+- Conjunção: союз
+- Preposição: предлог
 - Advérbio : наречие
 - Número : часто
   - Singular : единственное
