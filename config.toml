@@ -2,6 +2,7 @@ DefaultContentLanguage = "en"
 baseURL = 'https://jodros.github.io/'
 theme = 'minimal'
 relativeURLs = true
+enableRobotsTXT = true
 
 [languages]
   [languages.en]
