@@ -1,15 +1,6 @@
 ---
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-title: "Глаголы действия : verbos de ação"
-=======
 title: "глаголы действия : verbos de ação"
 weight: 4
->>>>>>> Stashed changes
-=======
-title: "глаголы действия : verbos de ação"
-weight: 4
->>>>>>> Stashed changes
 draft: false
 ---
 

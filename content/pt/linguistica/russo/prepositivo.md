@@ -1,13 +1,5 @@
 ---
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-title: "Предложный падеж : caso prepositivo"
-=======
 title: "предложный падеж : caso prepositivo"
->>>>>>> Stashed changes
-=======
-title: "предложный падеж : caso prepositivo"
->>>>>>> Stashed changes
 weight: 2
 draft: false
 ---
