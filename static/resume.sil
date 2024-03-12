@@ -1,0 +1,69 @@
+\document[papersize=letter]{
+\pdf:metadata[key=Author, value=João Quinaglia]
+\nofolios
+\neverindent
+
+\font[size=18]{\versalete{joão pedro alves quinaglia, 21}} \hfill \font[family=Source Code Pro,size=10, weight=400]{\href[src=mailto:joao.quinaglia@usp.br]{joao.quinaglia@usp.br}
+
+\raggedleft{
+\href[src=mailto:jopealqui@gmail.com]{jopealqui@gmail.com}
+
+\href[src=https://github.com/jodros]{github.com/jodros}
+
+\href[src=https://wa.me/5511953765893]{11 95376-5893}
+}}
+
+\bigskip
+\bigskip
+
+%Estr. Itaquera-Guaianases, São Paulo/SP.
+
+\bigskip
+\bigskip
+
+\versalete{Formação}
+
+\bigskip
+
+Ensino médio \dash ETEC de Itaquera, 2017\dash[en=true]2019
+
+Capacitação em tecnologia \dash Instituto Proa e Senac, 2020
+
+Bacharelado em Letras, russo e português \dash Universidade de São Paulo, 2021\dash[en=true] 
+
+\bigskip
+\bigskip
+
+\versalete{Conhecimentos}
+
+\bigskip
+
+Inglês fluente e russo básico.
+
+\bigskip
+
+Possuo conhecimentos de linux e de programação, linguagens como Lua e Python, bem como o essencial de C e Rust. Também tenho familiaridade com os conceitos de softwares como Adobe InDesign.
+
+\bigskip
+\bigskip
+
+\versalete{Disponibilidade}
+
+\bigskip
+
+Os horários variam muito conforme o semestre, mas geralmente tenho aulas tanto de manhã quanto de noite. Tenho disponibilidade para trabalhar em fim de semana.
+
+\bigskip
+\bigskip
+
+\versalete{projetos}
+
+\bigskip
+
+Atualmente colaboro com o desenvolvimento do \href[src=https://github.com/sile-typesetter/sile/]{SILE}, uma alternativa aos atuais programas de \em{desktop publishing}, sendo possível automatizar boa parte do processo de editoração eletrônica de um livro com seus scripts...
+
+\bigskip
+
+Mantenho um blog\footnote{Versões \versalete{\href[src=https://jodros.github.io/]{en}} e \versalete{\href[src=https://jodros.github.io/pt]{pt}}} onde publico alguns dos meus estudos, a exemplo de algumas notas de russo já publicadas \href[src=https://jodros.github.io/pt/linguistica/russo/]{(link)}.
+
+}
