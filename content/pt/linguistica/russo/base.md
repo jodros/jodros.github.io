@@ -31,7 +31,7 @@ draft: false
 - Conjunção: союз
 - Preposição: предлог
 - Advérbio : наречие
-- Número : часто
+- Número : число 
   - Singular : единственное
   - Plural : множественное
 - Verbo : глагол
@@ -372,16 +372,16 @@ Contudo, a forma para negação não tem sujeito, o objeto do qual se fala tamb�
 
 - у них не денег : eles não têm dinheiro
 
-### Algumas expressões básicas
+<!--### Algumas expressões básicas
 
 - скажите, пожалуйста : diga-me, por favor
-- может быть : talvez (*literalmente* pode ser)
-- так далее : e assim por diante
-- так себе : mais ou menos
-- слава Богу : graças a Deus
-- идёт дождь : está chovendo
+- может быть (ou возможно) : talvez (*literalmente* pode ser)
+- и так далее : e assim por diante
+ так себе : mais ou menos
+ слава Богу : graças a Deus
 
 <!-- - идёт снег : está nevando -->
+
 
 ### Textos simples
 
