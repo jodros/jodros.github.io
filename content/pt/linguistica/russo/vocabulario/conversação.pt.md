@@ -24,8 +24,13 @@ draft: true
 - : 
 
 
-- certo... : ясно <!-- só concordando/mostrando que está prestando atenção -->
+- certo... : ладно, ясно <!-- só concordando/mostrando que está prestando atenção -->
 
+
+- я знаю по своему опыту | я знаю про себя
+
+
+- с одной стороны, ..., но с другой стороны, ...
 
 
 

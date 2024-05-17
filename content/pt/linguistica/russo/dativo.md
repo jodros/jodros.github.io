@@ -6,13 +6,13 @@ draft: true
 
 Conforme avançamos nos casos, eles parecem ficar mais simples... O caso do dativo não é diferente ,
 
-As terminações típicas do masculino são, para os substantivos
+As terminações típicas do masculino são, para os substantivos:
 
-- у/ю (мужской)
-- е... (женский)
-- ам/ям (множественное число)
+- masculino/мужской: у/ю
+- feminino/женский: *igual ao prepositivo*
+- plural/множественное число: ам/ям
 
-e para os adjetivos
+E para os adjetivos
 
 - ему/ому
 - ей/ой
