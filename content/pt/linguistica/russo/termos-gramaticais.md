@@ -54,6 +54,8 @@ draft: true
 - letra : буква
     - consoante : согласный
     - vogal : гласный
+    - maiúscula : заглавная
+    - minúscula : строчная
 
     - Sinal brando : мягкий знак (ь)
     - Sinal duro : твёрдый знак (ъ)
